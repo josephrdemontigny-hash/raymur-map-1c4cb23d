@@ -3,15 +3,15 @@
 <meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#303030"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="ShopMap">
-<link id="mf" rel="manifest" href="manifest.webmanifest?v=27">
+<link id="mf" rel="manifest" href="manifest.webmanifest?v=28">
 <script>(function(){try{var h=location.hash||"";if(!/[#&]api=/.test(h)||!/[&#]k=/.test(h)){var c=JSON.parse(localStorage.getItem("raymur-shared-cfg")||"null");if(c&&c.api&&c.k){h="#api="+encodeURIComponent(c.api)+"&k="+encodeURIComponent(c.k);history.replaceState(null,"",location.pathname+location.search+h);}else return;}
-var b=location.origin+location.pathname.replace(/[^/]*$/,""),v="?v=27";
+var b=location.origin+location.pathname.replace(/[^/]*$/,""),v="?v=28";
 var m={name:"ShopMap",short_name:"ShopMap",id:b,start_url:location.origin+location.pathname+h,scope:b,display:"standalone",background_color:"#cce4f9",theme_color:"#303030",
 icons:[{src:b+"icon-192.png"+v,sizes:"192x192",type:"image/png",purpose:"any"},{src:b+"icon-512.png"+v,sizes:"512x512",type:"image/png",purpose:"any"},{src:b+"icon-maskable-512.png"+v,sizes:"512x512",type:"image/png",purpose:"maskable"}]};
-document.getElementById("mf").setAttribute("href","data:application/manifest+json,"+encodeURIComponent(JSON.stringify(m)));}catch(e){}})();</script><link rel="apple-touch-icon" sizes="180x180" href="icon-180.png?v=27"><link rel="icon" href="favicon.ico?v=27" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=27"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=27">
-<title>ShopMap</title><meta name="application-name" content="ShopMap"><style>html,body{margin:0;background:#151515;color:#eee;height:100%}</style><script>window.SHOPMAP_BUILD=27;(function(){if(!("serviceWorker" in navigator))return;var had=!!navigator.serviceWorker.controller,done=false;
+document.getElementById("mf").setAttribute("href","data:application/manifest+json,"+encodeURIComponent(JSON.stringify(m)));}catch(e){}})();</script><link rel="apple-touch-icon" sizes="180x180" href="icon-180.png?v=28"><link rel="icon" href="favicon.ico?v=28" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=28"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=28">
+<title>ShopMap</title><meta name="application-name" content="ShopMap"><style>html,body{margin:0;background:#151515;color:#eee;height:100%}</style><script>window.SHOPMAP_BUILD=28;(function(){if(!("serviceWorker" in navigator))return;var had=!!navigator.serviceWorker.controller,done=false;
 navigator.serviceWorker.addEventListener("controllerchange",function(){if(had&&!done){done=true;location.reload();}had=true;});
 navigator.serviceWorker.register("sw.js",{updateViaCache:"none"}).then(function(r){var chk=function(){r.update().catch(function(){});fetch("version.json?t="+Date.now(),{cache:"no-store"}).then(function(x){return x.json()}).then(function(j){if(j&&j.v>window.SHOPMAP_BUILD&&!done){var k="shopmap-rl",t=String(j.v);try{if(sessionStorage.getItem(k)===t)return;sessionStorage.setItem(k,t);}catch(e){}done=true;location.reload();}}).catch(function(){});};
 chk();document.addEventListener("visibilitychange",function(){if(document.visibilityState==="visible")chk();});window.addEventListener("pageshow",function(e){if(e.persisted)chk();});});})();</script>
 </head>
-<body><div id="root"></div><script type="module" src="app.js?v=27"></script></body></html>
+<body><div id="root"></div><script type="module" src="app.js?v=28"></script></body></html>
